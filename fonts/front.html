@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8"> 
+     <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+	 <title>Beach</title>
+	 <link rel="stylesheet" type="text/css" href="front.css">
+</head>
+<body>
+<section>
+	<header>
+		<a href="" class="logo">Beach</a>
+		<div class="toggle" onclick="menuToggle();"></div>
+	</header>
+	<div class="glass"></div>
+	<div class="content">
+	  <h2>Enjoy...<br><span>The cool breeze from our clear ocean!</span></h2>
+		
+	</div>
+	<video src="vid 01.mp4" autoplay muted loop></video>
+	<ul class="sci">
+		<li style="--i:1"><a href="">Facebook</a></li>
+		<li style="--i:2"><a href="">Twitter</a></li>
+		<li style="--i:3"><a href="">Instagram</a></li>
+		<li style="--i:4"><a href="">Linkedin</a></li>
+	</ul>
+	<ul class="navigation">
+		<li style="--i:1"><a href="front.html">Home</a></li>
+		<li style="--i:2"><a href="about.html">About</a></li>
+		<li style="--i:3"><a href="">Tour</a></li>
+		<li style="--i:5"><a href="">Contact Us</a></li>
+	</ul>
+</section>
+<script type="text/javascript">
+	function menuToggle(){
+		const toggleMenu=document.querySelector('.toggle');
+		const section=document.querySelector('section');
+		toggleMenu.classList.toggle('active');
+		section.classList.toggle('active');
+		menuToggle();
+	}
+</script>
+</body>
+</html>

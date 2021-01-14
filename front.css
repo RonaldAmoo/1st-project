@@ -40,6 +40,7 @@ header .toggle{
 	width: 40px;
 	height: 40px;
 	background: url(images/me1.png);
+	color: #8d8be8;
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -50,11 +51,12 @@ header .toggle{
 
 }
 header .toggle.active{
-	background: url(images/close.png);
+	background: url(images/close.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
-	background-size: 25px;
+	background-size: 30px;
+	
 
 }
 header .toggle:before{
